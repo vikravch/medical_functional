@@ -57,8 +57,8 @@
 
 body{
     background-color: var(--light-background-color);
+    font-family: Montserrat, sans-serif;
 }
-
 .wrapper{
     width: var(--wrapper-width);
 }
@@ -68,7 +68,6 @@ section{
 }
 h1{
     color: var(--text-color, #252B42);
-    font-family: Montserrat, sans-serif;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -76,7 +75,6 @@ h1{
     letter-spacing: 0.2px;
 }
 h2 {
-    font-family: Montserrat, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -84,7 +82,6 @@ h2 {
     letter-spacing: 0.2px;
 }
 h3{
-    font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -93,7 +90,6 @@ h3{
 }
 h4{
     color: var(--second-text-color, #737373);
-    font-family: Montserrat, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +97,6 @@ h4{
     letter-spacing: 0.2px;
 }
 h5 {
-    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -109,7 +104,6 @@ h5 {
     letter-spacing: 0.1px;
 }
 h6 {
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -117,7 +111,6 @@ h6 {
     letter-spacing: 0.2px;
 }
 p {
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -125,7 +118,6 @@ p {
     letter-spacing: 0.2px;
 }
 small{
-    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -140,7 +132,6 @@ h1, h2, h3, h4, h5, h6, p{
 /* Banner section */
 .banner {
     position: relative;
-    display: flex;
     flex-direction: column;
 }
 .banner .big_wrapper{
@@ -186,7 +177,6 @@ h1, h2, h3, h4, h5, h6, p{
 .banner .navigation .menu span{
     color: var(--second-text-color, #737373);
     text-align: center;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -203,7 +193,6 @@ h1, h2, h3, h4, h5, h6, p{
 .banner .navigation .auth .login{
     color: var(--primary-color, #23A6F0);
     text-align: right;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -222,7 +211,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--light-text-color, #FFF);
 
     /* btn-text */
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -281,8 +269,6 @@ h1, h2, h3, h4, h5, h6, p{
     border: 1px solid var(--primary-color, #23A6F0);
     color: var(--primary-color, #23A6F0);
     text-align: center;
-
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -498,7 +484,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--light-text-color, #FFF);
     text-align: center;
     /* light-drop-shadow */
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
 }
 
 .practise_item .practise_img .tools_list{
@@ -542,9 +528,6 @@ h1, h2, h3, h4, h5, h6, p{
     align-items: center;
     align-self: stretch;
 }
-.practise_list .title>h6{
-
-}
 .practise_list .practice_item_content .rate_box{
     background-color: var(--dark-background-color);
     padding: 5px;
@@ -581,8 +564,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .practise_list .characteristics small{
     color: var(--second-text-color, #737373);
-}
-.practise_list .button h6{
 }
 .practise_list .button{
     display: flex;
@@ -840,8 +821,8 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: 400;
     line-height: 28px; /* 142.857% */
     letter-spacing: 0.2px;
-    border-radius: 5px;
     border: 1px solid #E6E6E6;
+    border-radius: 5px;
     background: #F9F9F9;
 }
 .join_us .input_box input:focus{
@@ -857,12 +838,11 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0 5px 5px 0;
     border: 1px solid #E6E6E6;
     background: var(--primary-color, #23A6F0);
     color: var(--light-text-color, #FFF);
     text-align: center;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
