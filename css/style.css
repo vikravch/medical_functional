@@ -659,8 +659,6 @@ h1, h2, h3, h4, h5, h6, p{
     border: 0;
     color: var(--light-text-color, #FFF);
     text-align: center;
-
-    /* btn-text */
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -850,7 +848,6 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: 0.2px;
     right: 0;
 }
-
 /* Join us section end */
 /* Footer section */
 .footer_info{
