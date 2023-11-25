@@ -16,8 +16,16 @@
     --success-color: #2DC071;
     --alert-color: #E77C40;
     --footer-background-color: #FAFAFA;
+
     --wrapper-width: 1050px;
+    --wrapper-width-sm: 576px;
+    --wrapper-width-md: 740px;
+
     --section-padding: 160px;
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1120px;
 }
 
 * {
@@ -61,6 +69,27 @@ body{
 }
 .wrapper{
     width: var(--wrapper-width);
+}
+
+@media (max-width: 576px) {
+    .wrapper{
+        width: 90%;
+    }
+}
+@media (min-width: 576px) {
+    .wrapper{
+        width: var(--wrapper-width-sm);
+    }
+}
+@media (min-width: 768px) {
+    .wrapper{
+        width: var(--wrapper-width-md);
+    }
+}
+@media (min-width: 1120px) {
+    .wrapper{
+        width: var(--wrapper-width);
+    }
 }
 section{
     display: flex;
@@ -310,12 +339,101 @@ h1, h2, h3, h4, h5, h6, p{
     bottom: 40px;
     left: 60px;
 }
+@media (max-width: 576px) {
+    .banner .right_side{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .banner{
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+    }
+    .banner .big_wrapper{
+        width: 100%;
+    }
+    .banner .navigation .auth{
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 12px;
+    }
+    .banner .navigation .menu {
+        margin-left: 0;
+    }
+    .banner .banner_main{
+        width: 90vw;
+    }
+    .banner .navigation .logo{
+        margin-bottom: 20px;
+    }
+    .banner .navigation .menu,
+    .banner .navigation,
+    .banner .banner_buttons{
+        flex-direction: column;
+    }
+    .banner .banner_images,
+    .banner .left_side{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .banner .big_wrapper{
+        width: 100%;
+    }
+    .banner .banner_images{
+        display: flex;
+    }
+    .banner .banner_images,
+    .banner .left_side{
+        display: none;
+    }
+    .banner .navigation .auth{
+        justify-content: center;
+        margin-left: 24px;
+        margin-top: 12px;
+    }
+    .banner .navigation .menu {
+        margin-left: 24px;
+    }
+    .banner .banner_main{
+        width: 90vw;
+    }
+    .banner .right_side{
+        display: none;
+    }
+    .banner{
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+    }
+    .banner .navigation .menu {
+        display: flex;
+        gap: 20px;
+        margin-left: 70px;
+    }
+}
+@media (min-width: 1120px) {
+    .banner .big_wrapper{
+        width: 1439px;
+    }
+    .banner .banner_images,
+    .banner .left_side,
+    .banner .right_side{
+        display: flex;
+    }
+    .banner .navigation .auth{
+        display: flex;
+        gap: 20px;
+        margin-left: 240px;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* Banner section end */
-
 /* Our activity section */
-
 .our_activity>div{
-    background-color: var(--light-background-color);
+    /*background-color: var(--light-background-color);*/
     padding: var(--section-padding) 0;
 }
 
@@ -354,6 +472,16 @@ h1, h2, h3, h4, h5, h6, p{
     width: 50px;
     height: 2px;
     background: var(--danger-color, #E74040);
+}
+
+@media (max-width: 576px) {
+    .our_activity .activity_list{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .our_activity .activity_item{
+        align-items: center;
+    }
 }
 /* Our activity section end */
 /* Lead medicine section */
@@ -436,6 +564,42 @@ h1, h2, h3, h4, h5, h6, p{
     right: 0;
 }
 
+@media (max-width: 768px) {
+    .leading_medicine .img_content .calendar,
+    .leading_medicine .img_content .red_item,
+    .leading_medicine .img_content .hand,
+    .leading_medicine .img_content .list {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .leading_medicine>div{
+        gap: 0;
+    }
+    .leading_medicine .img_content .red_item{
+        width: 250px;
+    }
+    .leading_medicine .img_content .hand{
+        width: 200px;
+        height: 400px;
+    }
+}
+@media (min-width: 1120px) {
+    .leading_medicine>div{
+        gap: 30px;
+    }
+    .leading_medicine .img_content .red_item{
+        width: 348px;
+        height: auto;
+    }
+    .leading_medicine .img_content .hand{
+        position: absolute;
+        height: 100%;
+        width: auto;
+        left: 129px;
+    }
+}
 /* Lead medicine section end */
 /* Practice advise section */
 .practise_advice>div{
@@ -573,6 +737,16 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 37px;
     border: 1px solid var(--primary-color, #23A6F0);
 }
+
+@media (max-width: 768px) {
+    .practise_advice .practise_list{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .practise_advice .practise_list .practise_item{
+        align-items: center;
+    }
+}
 /* Practice advise section end */
 /* Pricing section */
 .pricing>div{
@@ -692,6 +866,26 @@ h1, h2, h3, h4, h5, h6, p{
 .pricing .features_item h6{
     color: var(--text-color, #737373);
 }
+
+@media (max-width: 768px) {
+    .pricing .list_pricing{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .pricing .list_pricing .list_pricing_item{
+        align-items: center;
+    }
+    .pricing .new_label{
+        right: -8px;
+        top: -8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pricing .list_pricing_item button{
+        padding: 15px 10px;
+    }
+}
 /* Pricing section end */
 /* Comments section */
 .comments>div{
@@ -779,6 +973,16 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 16px; /* 133.333% */
     letter-spacing: 0.2px;
 }
+
+@media (max-width: 576px) {
+    .comments .comments_list{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .comments .comments_list .comments_item{
+        align-items: center;
+    }
+}
 /* Comments section end */
 /* Join us section */
 .join_us>div{
@@ -847,6 +1051,12 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 28px; /* 200% */
     letter-spacing: 0.2px;
     right: 0;
+}
+
+@media (max-width: 576px) {
+    .join_us .input_box{
+        width: 100%;
+    }
 }
 /* Join us section end */
 /* Footer section */
